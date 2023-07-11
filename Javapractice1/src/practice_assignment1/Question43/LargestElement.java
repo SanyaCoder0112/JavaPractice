@@ -1,18 +1,15 @@
-package practice_assignment1.Question47;
+package practice_assignment1.Question43;
 
 import java.util.Scanner;
 
-public class SumAndAvgOfElement {
-	//Find the sum and average of all elements in array:
-
+public class LargestElement {
+	//Largest element in array
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		int max = Integer.MIN_VALUE;
+
 		System.out.println("Enter the number of elements ");
 		int n = sc.nextInt();
-
-		int sum = 0;
-
-		double avg = 0;
 		int[] arr = new int[n];
 		System.out.println("please all the elements of array ");
 		for(int i=0;i<n;i++)
@@ -21,13 +18,14 @@ public class SumAndAvgOfElement {
 			//to take value inn array.
 		}
 		for (int i = 0; i < n; i++) {
-			sum = sum + arr[i];
+			
+//			if (arr[i] > max) {
+//				max = arr[i];
+//			}
+			max=Math.max(arr[i], max);
+		}
+				System.out.println("The maximum element is " + max);
 			
 		}
-		
-		System.out.println("The sum is " + sum);
-		avg = (sum) / n;
-		System.out.println("The average is " + avg);
-		
-	}
+	
 }

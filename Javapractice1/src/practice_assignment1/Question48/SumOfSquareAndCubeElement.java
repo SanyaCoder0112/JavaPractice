@@ -12,11 +12,24 @@ public class SumOfSquareAndCubeElement{
 		int n = sc.nextInt();
 
 		int[] arr = new int[n];
-		for (int i = 0; i < n; i++) {
-			int SquaresOfElements = arr[i] * arr[i];
-			System.out.println("Square of elements is " + SquaresOfElements);
-			int CubesOfElements = arr[i] * arr[i] * arr[i];
-			System.out.println("Cube of elements is " + CubesOfElements);
+		int SquaresOfElements=0;
+		int CubesOfElements=0;
+		System.out.println("please all the elements of array ");
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+			//to take value inn array.
 		}
+		for (int i = 0; i < n; i++) {
+			 SquaresOfElements = arr[i] * arr[i];//2*2//
+			 System.out.println(SquaresOfElements);
+			 CubesOfElements = arr[i] * arr[i] * arr[i];
+			 System.out.println(CubesOfElements);
+
+		}
+		System.out.println("Square of elements is " + SquaresOfElements);
+		
+		System.out.println("Cube of elements is " + CubesOfElements);
+	
 	}
 }

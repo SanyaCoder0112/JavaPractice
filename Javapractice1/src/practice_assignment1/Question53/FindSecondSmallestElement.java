@@ -9,7 +9,13 @@ public class FindSecondSmallestElement {
 		System.out.println("Enter the number of elements ");
 		int n=sc.nextInt();
 		int[] arr=new int[n];
-		
+		System.out.println("please enter  all the elements of array ");
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+			//to take value inn array.
+		}
+
 
 		for(int i=0;i<n;i++){
 		int min=Integer.MAX_VALUE;
@@ -22,3 +28,5 @@ public class FindSecondSmallestElement {
 		}
 		}
 		}
+
+//logic wrong do again

@@ -4,6 +4,7 @@ package practice_assignment1.Question52;
 import java.util.Scanner;
 
 public class FindSecondLargestElement{
+	//Find the second largest element in array.
 
 
 	public static void main(String[] args) {
@@ -11,6 +12,12 @@ public class FindSecondLargestElement{
 		System.out.println("Enter the number of elements ");
 		int n = sc.nextInt();
 		int[] arr = new int[n];
+		System.out.println("please enter  all the elements of array ");
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+			//to take value inn array.
+		}
 
 		for (int i = 0; i < n; i++) {
 			int max = Integer.MIN_VALUE;
@@ -23,3 +30,4 @@ public class FindSecondLargestElement{
 		}
 	}
 }
+//logic wrong do again

@@ -7,6 +7,7 @@ public class ConvertLowerCaseToUpperCase {
 		System.out.println("Enter the string ") ;
 		String str=sc.next() ;
 		System.out.println(str.toUppercase()) ;
-		System.out.println(str.toLowercase()) ;
+		System.out.println
+		str.toLowercase()) ;
 	}
 }
