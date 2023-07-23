@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ReverseArray {
 	
+	
 	public static void print(int[] arr) {
 		for(int i=0; i< arr.length; i++) {
 			System.out.println("\t" + arr[i]);
@@ -22,22 +23,28 @@ public class ReverseArray {
 		int temp = 0;
 		for(int i=0; i<arr.length/2; i++) {
 			temp = arr[i];
-			arr[i] = arr[arr.length - 1- i];
+			arr[i] = arr[arr.length - 1- i];//we need to move both side at the same time so in this case it is not necessary to take 
+			// two pointer left and right
 			arr[arr.length -1 -i] = temp;
 		}
 		return arr;
 	}
 	
 	public int[] indexMethod(int[] arr) {
-		int index = -1;
+		int index = -1;  
 		for(int i=0; i< arr.length; i++) {
 			if(arr[i] == 1) {
 				index = i;
+				break;
+				
 			}
 		}
-		int[] result = new int[arr.length];
+		int[] result = new int[arr.length]; 
+		if(index>-1) {
 		for(int i=0; i<arr.length-index ; i++) {
 			result[i] = 1;
+			//by default rest of the index which is not 1 will have the value of 0.
+		}
 		}
 		return result;
 	}
@@ -49,8 +56,9 @@ public class ReverseArray {
 				count++;
 			}
 		}
-		int[] result = new int[arr.length];
+		int[] result = new int[arr.length];  //it is different from line no.83 because both are in different method
 		for(int i=arr.length-count; i<arr.length; i++) {
+			
 			result[i] = 1;
 		}
 		return result;
@@ -60,7 +68,7 @@ public class ReverseArray {
 		int[] copy = new int[arr.length];
 		for(int i=0; i<arr.length; i++) {
 			copy[i] = arr[i];
-		}
+		}//// we are psssing copy of the actual array to prevent passing of input array again
 		return copy;
 	}
 	
@@ -86,12 +94,12 @@ public class ReverseArray {
 		print(result);
 		
 		System.out.println("Output of two pointer method: ");
-		result = ra.reverseTwoPointer(ra.copy(arr));
+		result = ra.reverseTwoPointer(ra.copy(arr)); // we are psssing copy of the actual array to prevent passing of input array again
 		print(result);
-		
+		 
 		System.out.println("Output of index method: ");
 		result = ra.indexMethod(ra.copy(arr));
-		print(result);
+	    print(result);
 		
 		
 //		use this to sort the array

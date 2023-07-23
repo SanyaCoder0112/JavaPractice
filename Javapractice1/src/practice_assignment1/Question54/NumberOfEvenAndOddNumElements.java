@@ -33,7 +33,7 @@ public class NumberOfEvenAndOddNumElements {
 			//and store values inside thta anrrar then print it 
 			//we should not use print statement inside for loop because if we will put inside for loop then it will print statements 
 			//every time the iter
-			//iteration takes place
+			//iteration takes place...
 		}
 	}
 }

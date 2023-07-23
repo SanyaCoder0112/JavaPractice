@@ -11,7 +11,16 @@ public class InsertElementInArray {
 		System.out.println("Enter the number of elements ");
 		int n = sc.nextInt();
 		int[] arr = new int[n];
-		for (int i = 0; i < n; i++) {
+		System.out.println("please all the elements of array ");
+
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+			//to take value inn array.
+		}
+		System.out.println("enter the element to be inserted")
+		int[] result =new int[];
+				for (int i = 0; i < n; i++) {
 			arr[i + 1] = arr[i];
 			System.out.println(arr[i]);
 		}

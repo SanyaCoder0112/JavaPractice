@@ -1,6 +1,6 @@
 package practice_assignment1.Question51;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class PrintCommonElementsOfTwoArray {
 
@@ -21,20 +21,51 @@ public class PrintCommonElementsOfTwoArray {
 			//to take value inn array.
 		}
 		System.out.println("please enter  all the elements of array 2 ");
-		for(int i=0;i<n;i++)
+		for(int k=0;k<n;k++)
 		{
-			arr2[i]=sc.nextInt();
+			arr2[k]=sc.nextInt();
 			//to take value inn array.
 		}
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n-1; i++) {
-				if (arr1[i] == arr2[j]) {
-				}
+		
+		Set<Integer> resultSet = new HashSet<>();
+		for(int i=0;i<arr1.length;i++)
+		{
+			for(int j=0;j<arr2.length;j++)
+		{
+			if(arr1[i]==arr2[j])
+			{
+				resultSet.add(arr1[i]);
 			}
-					System.out.println(arr1[i]);
-				}
+		}
+		}
+		System.out.println(resultSet);
+		
+	
+			
+			
+		
+			
+					
+				
 			
 	}
 }
 
+////import java.util.*;  
+//class HashSet1{  
+//	 public static void main(String args[]){  
+//	  //Creating HashSet and adding elements  
+//	    HashSet<String> set=new HashSet();  
+//	           set.add("One");    
+//	           set.add("Two");    
+//	           set.add("Three");   
+//	           set.add("Four");  
+//	           set.add("Five");  
+//	           Iterator<String> i=set.iterator();  
+//	           while(i.hasNext())  
+//	           {  
+//	           System.out.println(i.next());  
+//	           }  
+//	 }  
+//	}  
 //logic wrong do again
