@@ -5,6 +5,9 @@ public class CheckLetterIsPresentOrNot {
 
 	public static void main(String[] args) {
 		String str=" Umbrella ";
-		System.out.println(str.contains('e'));
+		if(str.contains("e"))
+		System.out.println("e is present ");
+		else
+			System.out.println("e is not present ");
 	}
 }
