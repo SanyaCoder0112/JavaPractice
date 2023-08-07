@@ -1,8 +1,12 @@
 package oops_practive.bankingSystem;
 
+
 public class Main {
 
 	public static void main(String[] args) {
+		
+		
+		
 // here sanyasaccount is an object of account class its created and value is assigned to the instance variable of the class
 //  
 		Account sanyasAccount = new Account("1600110234", 900000, "Sanya", "sanyamishra4921@gmail.com", "9748816761");
@@ -17,11 +21,13 @@ public class Main {
 		System.out.println("hi  talented ji " + sanyasAccount.getBalance());
 		System.out.println("hi  talented ji " + sanyasAccount.getEmail());
 		System.out.println("ab hamlog juli ke accpount me 40000 deposit karenge kyunki salary aya hai");
-		sanyasAccount.depositMoney(40000.00);
+		
+		sanyasAccount.depositMoney(900000.00);
 		System.out.println("hi  purana balance " + ankitaAccount.getBalance());
-		ankitaAccount.depositMoney(50000.00);
+		
+		ankitaAccount.depositMoney(500000.00);
 		System.out.println("ab hamlog juli ke account see 900000 rs nikalnge Hyundai i20 sunroof car lene ke liye ");
-		sanyasAccount.withDraw(90000.00);
+		sanyasAccount.withDraw(900000.00);
 		System.out.println("lets go to Kashmir trip");
 		swetaAccount.withDraw(700000);
 
@@ -32,3 +38,6 @@ public class Main {
 //      SanyasAccount.WithDrawMoney(WithDrawalMoney: 150000);
 	}
 }
+//saving account
+//current account
+//opening new account

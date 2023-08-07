@@ -33,6 +33,7 @@ public class Account {
 			System.out.println("WithDraw successful, Current Balance is " + this.Balance);
 		}
 	}
+	
 
 	
 	//getters are used to get the values of attributes of object
@@ -65,12 +66,12 @@ public class Account {
 		return Email;
 	}
 
-	public void setEmail(String email) {
+	public void tEmail(String email) {
 		Email = email;
 	}
 
 	public String getphoneNumber() {
-		return PhoneNumber;
+		return this.PhoneNumber;
 	}
 
 	public void setPhoneNumber(String phoneNumber) {
